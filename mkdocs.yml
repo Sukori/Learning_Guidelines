@@ -1,0 +1,49 @@
+site_name: CERN Learning Guidelines
+site_description: CERN e-Learning Guidelines
+site_author: Philippe Berset HR-LD (2021)
+site_url: https://elearning-guidelines-hrld.docs.cern.ch/
+
+repo_name: Gitlab
+repo_url: https://gitlab.cern.ch/hr-dep-ld/hr-ld-e-learning-guidelines
+edit_uri: 'blob/master/docs'
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - toc.integrate
+    - navigation.top
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  alternate:
+    - name: English
+      link: ./
+      lang: en
+    - name: Français
+      link: ./fr/
+      lang: fr
+
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      languages:
+        en: english
+        fr: français
+      nav_translations:
+        en:
+          Page2: Before you begin
+          Page3: Video
+          Page4: E-learning module
+          Page5: Other propositions
+        fr:
+          Page2: Avant de commencer
+          Page3: Vidéo
+          Page4: Module e-learning
+          Page5: Autres propositions
