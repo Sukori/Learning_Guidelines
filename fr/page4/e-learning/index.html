@@ -1,0 +1,931 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="CERN e-Learning Guidelines">
+      
+      
+        <meta name="author" content="Philippe Berset HR-LD (2021)">
+      
+      
+        <link rel="canonical" href="https://elearning-guidelines-hrld.docs.cern.ch/fr/page4/e-learning/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Développer un module e-learning - CERN Learning Guidelines</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#developper-un-module-e-learning" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../" title="CERN Learning Guidelines" class="md-header__button md-logo" aria-label="CERN Learning Guidelines" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CERN Learning Guidelines
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Développer un module e-learning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../../../page4/e-learning/" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+              
+                <li class="md-select__item">
+                  <a href="./" hreflang="fr" class="md-select__link">
+                    Français
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://gitlab.cern.ch/hr-dep-ld/hr-ld-e-learning-guidelines" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Gitlab
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../" class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../page2/begin/" class="md-tabs__link">
+        Avant de commencer
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../page3/video/" class="md-tabs__link">
+        Vidéo
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Module e-learning
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../page5/other/" class="md-tabs__link">
+        Autres propositions
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="CERN Learning Guidelines" class="md-nav__button md-logo" aria-label="CERN Learning Guidelines" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CERN Learning Guidelines
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://gitlab.cern.ch/hr-dep-ld/hr-ld-e-learning-guidelines" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Gitlab
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Avant de commencer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Avant de commencer" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Avant de commencer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page2/begin/" class="md-nav__link">
+        Avant de commencer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Vidéo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vidéo" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vidéo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page3/video/" class="md-nav__link">
+        Enregistrer une vidéo
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Module e-learning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Module e-learning" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Module e-learning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Développer un module e-learning
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Développer un module e-learning
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#charge-de-travail-attendue" class="md-nav__link">
+    Charge de travail attendue
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeles-de-reference" class="md-nav__link">
+    Modèles de référence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonnes-pratiques" class="md-nav__link">
+    Bonnes pratiques
+  </a>
+  
+    <nav class="md-nav" aria-label="Bonnes pratiques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#convention-de-nommage" class="md-nav__link">
+    Convention de nommage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#si-vous-trouvez-que-cela-prend-du-temps" class="md-nav__link">
+    Si vous trouvez que cela prend du temps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conseils-generaux" class="md-nav__link">
+    Conseils généraux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modele-de-page" class="md-nav__link">
+    Modèle de page
+  </a>
+  
+    <nav class="md-nav" aria-label="Modèle de page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explications" class="md-nav__link">
+    Explications
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conseils-de-conception" class="md-nav__link">
+    Conseils de conception
+  </a>
+  
+    <nav class="md-nav" aria-label="Conseils de conception">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#palette-de-couleurs" class="md-nav__link">
+    Palette de couleurs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logo-du-cern" class="md-nav__link">
+    Logo du CERN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#images-et-graphiques" class="md-nav__link">
+    Images et graphiques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conception-intemporelle" class="md-nav__link">
+    Conception intemporelle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#humour-langage-grossier" class="md-nav__link">
+    Humour (langage grossier)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conception-responsive" class="md-nav__link">
+    Conception responsive
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Autres propositions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Autres propositions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Autres propositions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page5/other/" class="md-nav__link">
+        Autres propositions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://gitlab.cern.ch/hr-dep-ld/hr-ld-e-learning-guidelines/blob/master/docs/page4/e-learning.fr.md" title="Editer cette page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="developper-un-module-e-learning">Développer un module e-learning</h1>
+<p>Cette documentation donne des conseils de développement e-Learning pour <a href="https://articulate.com/">Articulate Storyline 360</a>. Storyline 360 est l'outil de création officiel utilisé par <strong>HR-LD</strong> et <strong>HSE-TS</strong> pour créer et maintenir des modules d'apprentissage en ligne. Si <strong>HR-LD</strong> ou <strong>HSE-TS</strong> changent d'outil officiel, ce document sera mis à jour en conséquence.</p>
+<p>Cette documentation devrait vous fournir un fichier modèle Storyline et un dossier "assets" qui contient des éléments d'interface utilisateur. Il existe également un modèle PowerPoint qui suit les mêmes règles de conception. Le modèle Storyline contient les éléments de l'interface utilisateur déjà placés dans les diapositives et le <em>Master template</em> avec les déclencheurs prévus déjà définis. Vous pouvez adapter l'utilisation à vos besoins spécifiques. Toute modification du modèle est la bienvenue et doit être documentée.</p>
+<h2 id="charge-de-travail-attendue">Charge de travail attendue</h2>
+<p><strong>Niveau 1 BASIC</strong> (diaporama, sans interactions)</p>
+<ul>
+<li>le plus simple -&gt; 49 heures de travail : 1 heure d'e-learning</li>
+<li>moyen -&gt; 79 heures de travail : 1 heure d'e-learning</li>
+<li>production médiatique complexe (voix off, graphiques) -&gt; 125 heures de travail : 1 heure d'e-learning</li>
+</ul>
+<p><strong>Niveau 2 INTERACTIF</strong> (quiz)</p>
+<ul>
+<li>médias simples, modèles -&gt; 127 heures de travail : 1 heure d'e-learning</li>
+<li>moyenne -&gt; 184 heures de travail : 1 heure d'e-learning</li>
+<li>interactions personnalisées, médias, simulations intégrées -&gt; 267 heures de travail : 1 heure de e-learning</li>
+</ul>
+<p><strong>Niveau 3 AVANCÉ, HAUTE INTERACTIVITÉ</strong> (quiz)</p>
+<ul>
+<li>modèles, développement rapide -&gt; 217 heures de travail : 1 heure de e-learning</li>
+<li>moyenne -&gt; 490 heures de travail : 1 heure de e-learning</li>
+<li>jeux, production de médias, production de simulations -&gt; 716 heures de travail : 1 heure d'e-learning</li>
+</ul>
+<p><em><a href="http://www.chapmanalliance.com/howlong/">source</a></em></p>
+<h2 id="modeles-de-reference">Modèles de référence</h2>
+<ul>
+<li><a href="../../files/e-learning-plans/E-Learning_Project_Plan.docx">Aide au plan de projet</a></li>
+<li><a href="../../files/e-learning-plans/E-Learning_Storyboard.docx">Aide au storyboard</a></li>
+<li><a href="./../files/ppt-template/e-learning.template.ppt.v-1-0-3-fr.pptx">Modèle Powerpoint pour le prototypage</a></li>
+<li><a href="./../files/story-template/_0000_e-learning.layout-guides-16%2C9.v-0-0-3-fr.story">Modèle .story (Storyline 360)</a></li>
+<li>Boutons <a href="../../files/buttons/Navigation_Buttons_SL3_final_02.ai">Fichier Illustrator</a> / <a href="../../files/buttons/png/png.zip">Fichiers PNG (zippés)</a></li>
+<li>Jeu de personnages <a href="../../files/adobe_files/01_CHARACTERS.v.0-0-2.ai">Fichier Illustrator</a> / <a href="../../files/adobe_files/PNG/PNG.zip">Fichiers PNG (zippés)</a></li>
+<li><a href="../../files/animations_Opti/Animations_Opti.zip">Exemple d'animation (Storyline 360)</a></li>
+<li><a href="https://gitlab.cern.ch/pberset/hr-ld-e-learning-guidelines/-/tree/master/docs/files/assets_community">Fichiers de la communauté Articulate</a></li>
+</ul>
+<h2 id="bonnes-pratiques">Bonnes pratiques</h2>
+<h3 id="convention-de-nommage">Convention de nommage</h3>
+<p>Dans Storyline, comme dans beaucoup d'autres outils. Les objets que vous créez ont des noms par défaut. Changez-les pour quelque chose de plus... <strong>explicite</strong> !</p>
+<p>Vous trouverez des exemples ci-dessous :</p>
+<p><img alt="nom de fichier" src="../../img/best-practices/file-naming.png" /></p>
+<p>Dans l'image ci-dessus, le nom à gauche (CERN_RP_NS_M2_STORY_v8.2 dernière version 03.10.2019 V2.story) ne dit absolument pas de quoi parle le contenu. Ce sont toutes des <em>dernières versions</em> ? Laquelle est la plus récente ? Le nom de droite (supervisors_PeopleManagementPart2_V9.story) n'est peut-être pas la meilleure option, mais au moins, vous pouvez deviner qu'il s'agit de la partie 2 du module People Management dans la formation en ligne pour les superviseurs, neuvième version.</p>
+<p>Si votre équipe suit une autre convention de dénomination, respectez-la bien sûr, mais veillez à ce qu'elle soit cohérente et facilement identifiable.</p>
+<p><img alt="Nommage des scènes" src="../../img/best-practices/scene-slide-naming.png" /></p>
+<p><strong>Dans la vue "Timeline view" de Storyline :</strong> À gauche de l'image ci-dessus, les noms des sections et des diapositives pourraient être plus explicites. À droite, il est plus facile d'identifier les diapositives et les chapitres avec leurs titres.</p>
+<p><strong>Astuce</strong> : Dans le "Master slide" du modèle Storyline fourni ici, la zone de texte pour le titre est définie comme "Title text". Cela renommera automatiquement votre diapositive dans la hiérarchie avec le contenu de la zone de texte.</p>
+<p><img alt="mauvais affichage de la ligne de temps" src="../../img/best-practices/horrible-timeline.png" /></p>
+<p>La ligne de temps ci-dessus ne contient que des objets portant des noms par défaut. Les objets ne sont pas triés. Une telle ligne de temps vous donnera du fil à retordre si vous devez effectuer une mise à jour.</p>
+<p><img alt="meilleur affichage de la chronologie" src="../../img/best-practices/better-timeline.png" /></p>
+<p>Ici, si vous devez modifier un élément qui apparaît au milieu de la diapositive, vous pouvez avoir un indice visuel sur l'endroit où vous devez le chercher. Les noms devraient vous aider à identifier le contenu ou l'objectif.</p>
+<p>Comme vous pouvez le remarquer sur les deux captures d'écran précédentes, il y a une différence dans la quantité d'objets sur la diapositive. Évitez de faire des lignes de temps de 4 minutes. Vous pouvez utiliser des calques dans Storyline. Vous pouvez les afficher ou les masquer avec les entrées de l'utilisateur. Vous pouvez également séparer le contenu entre plusieurs diapositives et jouer une animation de transition si nécessaire.</p>
+<p><img alt="nom des calques" src="../../img/best-practices/layers-naming.png" /></p>
+<p>Bien entendu, il est important de nommer les calques de manière appropriée ! Ici, l'élément <em>chair</em>, affiche le calque <em>chair</em> lorsqu'on clique dessus. Pouvez-vous être plus explicite ?</p>
+<h3 id="si-vous-trouvez-que-cela-prend-du-temps">Si vous trouvez que cela prend du temps</h3>
+<p>Travailler avec du contenu non étiqueté est <strong>encore plus long</strong> et presque impossible. Tout renommer plus tard est très long et n'a aucune valeur ajoutée pour le cours lui-même ! Sauvez un concepteur d'e-learning. Étiquetez clairement vos objets <img alt="🙏" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f64f.svg" title=":pray:" /></p>
+<h3 id="conseils-generaux">Conseils généraux</h3>
+<p>Vous avez peut-être entendu parler de styles d'apprentissage tels que le visuel, l'auditif ou le kinesthésique. Ces styles sont assez populaires, mais ils sont également qualifiés de "mythes de l'apprentissage". Les neurosciences n'ont pas encore prouvé la pertinence de ces théories. Mélanger plusieurs façons d'apprendre un sujet est une bien meilleure approche, car l'utilisateur associera plusieurs façons de penser pour obtenir un seul résultat, ce qui lui permettra de mieux comprendre le sujet. Dans le cas de l'apprentissage en ligne, vous êtes limité, mais il n'est pas impossible de proposer de petites activités pratiques avec des animations visuelles, des sons et des voix. Dans la mesure du possible, essayez de varier votre approche et de ne pas vous en tenir à une seule façon de transmettre l'information.</p>
+<p>Vous pouvez également éviter de cliquer pour le seul plaisir de cliquer. Vous avez le droit de montrer certaines diapositives sans demander d'interaction si le contenu n'offre pas une bonne opportunité d'activité. Bien entendu, un cours interactif est plus intéressant et vous devez prendre le temps de réfléchir au sujet et à la manière d'en faire une activité. Il n'est cependant pas nécessaire de passer des semaines sur une seule diapositive.</p>
+<h2 id="modele-de-page">Modèle de page</h2>
+<p>Storyline offre une présentation basée sur des diapositives (comme PowerPoint). Tout autre outil qui produit ce type d'affichage doit respecter les lignes directrices ci-dessous. Concentrez-vous sur la façon de guider l'utilisateur à travers la diapositive et sur la façon dont elle devrait être lue. Posez-vous la question suivante "Qu'est-ce que l'utilisateur doit voir en premier" ?</p>
+<ul>
+<li>La diapositive doit être au format 1920 x 1080 (16:9) <em>Full HD</em>*.</li>
+<li>La police de texte doit être Open Sans.</li>
+<li>Les boutons du lecteur par défaut de Storyline sont désactivés dans le modèle (Suivant, Précédent, Soumettre, Menu).</li>
+<li>Le titre de la diapositive est affiché dans le coin supérieur gauche de la diapositive. Aucune bannière d'en-tête ne doit être utilisée.</li>
+<li>Les boutons de navigation et le bouton d'aide sont affichés en bas à droite de la diapositive et ne doivent apparaître que lorsqu'ils sont nécessaires. Aucune bannière de bas de page ne doit être utilisée.</li>
+</ul>
+<p>Pour plus de détails sur la grille des diapositives et la taille des polices, veuillez vous référer aux diapositives 1.2 et 1.3 du <a href="#modèles-de-référence">modèle ppt et fichiers .story</a>.</p>
+<h3 id="explications">Explications</h3>
+<ul>
+<li>Les dimensions de la diapositive doivent être de 1920 x 1080 (16:9).</li>
+</ul>
+<p>Le format 16:9 correspond à l'affichage standard d'un écran d'ordinateur. Ce choix permet de gagner du temps en évitant d'adapter le contenu à un format différent. Si les <strong>SME</strong> souhaitent imposer un design de diapositive avant la production, ils doivent recevoir des instructions pour adapter leur contenu à un format 16:9 à l'aide du modèle PowerPoint.</p>
+<p>Il est préférable de conserver une taille de diapositive suffisamment grande afin de conserver une bonne qualité d'image. Le Learning Hub ouvre la formation en ligne dans une fenêtre pop up, qui n'est pas en plein écran par défaut.</p>
+<ul>
+<li>La police du texte doit être Open Sans.</li>
+</ul>
+<p>Comme spécifié dans les <a href="https://design-guidelines.web.cern.ch/guidelines/typography">CERN design guidelines</a> pour le contenu en ligne. Vous pouvez adapter la taille, la couleur et le poids de la police en fonction de la situation. Le texte doit être aussi facile à lire que possible.</p>
+<ul>
+<li>Les boutons du lecteur par défaut de Storyline sont désactivés dans le modèle (Suivant, Précédent, Soumettre, Menu).</li>
+</ul>
+<p>La raison en est que si nous créons nous-mêmes les boutons de navigation, nous pouvons décider quand ils sont disponibles et quand l'utilisateur doit effectuer une action avant de passer à la diapositive suivante. Nous préférons éviter le bouton de menu pour limiter la capacité de l'utilisateur à sauter à n'importe quelle diapositive sans lire ou effectuer une action requise.</p>
+<ul>
+<li>Le titre de la diapositive est affiché dans le coin supérieur gauche de la diapositive. Aucune bannière d'en-tête ne doit être utilisée.</li>
+</ul>
+<p>Le coin supérieur gauche est le premier endroit que nous regardons dans une fenêtre lorsque nous cherchons une information. C'est le sens de lecture occidental standard ; les cours au CERN sont en français ou en anglais. Nous préférons éviter les bannières qui prennent toute la largeur de la diapositive afin de libérer de l'espace pour le contenu utile de la diapositive.</p>
+<ul>
+<li>Les boutons de navigation et d'aide sont affichés en bas à droite de la diapositive et ne doivent apparaître que lorsqu'ils sont nécessaires. Aucune bannière de bas de page ne doit être utilisée.</li>
+</ul>
+<p>Le coin inférieur droit est le dernier endroit que nous regardons lorsque nous lisons une diapositive. L'utilisateur doit consulter la diapositive avant de penser à passer à la suivante. Nous évitons la bannière de bas de page pour la même raison que nous évitons la bannière d'en-tête. Comme indiqué précédemment, vous pouvez décider d'afficher ou de masquer le bouton de navigation et le bouton de soumission de l'exercice. Le bouton d'aide doit être affiché chaque fois qu'un utilisateur doit effectuer une action sur la diapositive. Cela permet de libérer de l'espace sur la diapositive pour le contenu. Si l'utilisateur ne comprend pas tout de suite, le bouton d'aide affiche une petite fenêtre contextuelle expliquant ce qu'il faut faire.</p>
+<p>Si vous utilisez un outil qui crée des présentations basées sur un format de page web (par exemple <a href="https://articulate.com/360/rise">Articulate Rise</a> ou <a href="https://www.adaptlearning.org/">Adapt Learning</a>), essayez d'adapter les lignes directrices ci-dessus autant que possible. Vous n'êtes pas limité en hauteur pour votre cours, mais évitez les pages web longues de plusieurs kilomètres, sinon votre cours pourrait sembler plus long qu'il ne l'est en réalité. Un sujet par page est suffisant et mieux organisé.</p>
+<h2 id="conseils-de-conception">Conseils de conception</h2>
+<h3 id="palette-de-couleurs">Palette de couleurs</h3>
+<p><em>Bon à savoir</em> : <a href="https://whitespacedesignbook.com">L'espace blanc n'est pas votre ennemi</a> (en Anglais). N'ayez pas peur de laisser un peu d'espace dans vos diapositives.</p>
+<p>Il est préférable de discuter du code couleur de votre cours avec les <strong>SME</strong>. Certaines équipes ou certains projets au CERN peuvent avoir une palette de couleurs déjà définie. Il est préférable de s'aligner sur les lignes directrices existantes afin d'assurer une cohérence visuelle entre tous les supports sur lesquels le sujet est partagé (site web, affiches, brochures, etc.).</p>
+<p>Si vous n'avez pas de précision ou si les <strong>SME</strong> vous demandent de définir la palette de couleurs, vous pouvez vous aligner sur les <a href="https://design-guidelines.web.cern.ch/guidelines/colours">lignes directrices pour la conception du site web du CERN</a>. Les fichiers modèles contiennent une palette de couleurs pour HR-LD comme palette de couleurs générique pour la formation. Vous pouvez l'utiliser si vous n'avez aucune idée de ce que devrait être votre palette de couleurs. Pour les contenus liés à la <strong>sécurité</strong>, la palette de couleurs <strong>HSE</strong> est également disponible dans les modèles.</p>
+<p>Gardez à l'esprit que la meilleure option pour un texte facile à lire est d'utiliser des lettres noires sur fond blanc. Cela dit, si vous placez le texte sur une image, vous pouvez envisager d'ajouter une couleur de fond transparente pour que votre texte soit lisible sur l'image de fond.</p>
+<p>Exemple :</p>
+<p><img alt="texte sur l'image" src="../../img/best-practices/example-BG-colours-text.png" /></p>
+<p>Source : <a href="https://fr.freepik.com/photos/affaires">https://fr.freepik.com/photos/affaires</a> Affaires photo créé par freepik</p>
+<p>Vous pouvez également introduire des couleurs dans votre paragraphe, pour mettre l'accent sur un mot ou une phrase. Les couleurs du côté rouge semblent plus proches du lecteur. Les couleurs du côté bleu peuvent sembler plus éloignées du lecteur. Si vous utilisez le bleu du CERN sur votre page, vous voudrez peut-être utiliser un autre ton de bleu pour rester dans le même côté du spectre. Toutefois, l'utilisation d'un peu d'orange peut faire ressortir le texte de manière très efficace et dynamique. Le texte en gras et souligné est un moyen discret et efficace d'attirer l'attention.</p>
+<p><img alt="spectre de couleurs" src="../../img/best-practices/colour-spectrum.png" /></p>
+<h3 id="logo-du-cern">Logo du CERN</h3>
+<p>Le logo du CERN fait l'objet de <a href="https://design-guidelines.web.cern.ch/guidelines/logo">directives très spécifiques</a>. Même si les modules d'apprentissage en ligne sont destinés à un usage interne uniquement, veuillez respecter les directives relatives à l'utilisation du logo du CERN. Vous devez l'utiliser sur la page de titre de votre cours, dans le coin supérieur droit, par exemple, en respectant les marges officielles.</p>
+<h3 id="images-et-graphiques">Images et graphiques</h3>
+<p><strong>Avant d'utiliser une image, assurez-vous que vous en avez le droit.</strong></p>
+<p>Indiquez les sources à côté de votre image selon les règles de citation spécifiées sur la plateforme à partir de laquelle vous avez pris l'image.</p>
+<p>Vous devez demander l'autorisation au <a href="https://cern.service-now.com/service-portal?id=sc_cat_item&amp;name=audiovisual-production-request&amp;se=audiovisual-production">service audiovisuel du CERN</a> (<a href="https://international-relations.web.cern.ch/">IR-ECO</a>) avant de prendre des photos dans la zone du CERN. Un photographe agréé par le CERN peut être mandaté pour prendre les photos. N'agissez pas de votre propre chef.</p>
+<p>Si vous ne pouvez pas utiliser les images vectorielles <code>.svg</code>, sauvegardez-les en <code>.emf</code> (le mieux) ou en <code>.png/.jpg</code> avant de les importer dans Storyline. Vous devriez demander aux <strong>SME</strong> de vous fournir autant d'images que possible. Vos <strong>SME</strong> sont les meilleures personnes pour vous donner des images liées au sujet.</p>
+<p>Vous pouvez trouver des images liées au CERN sur le <a href="https://cds.cern.ch/">CERN Document Server</a>.</p>
+<p>Vous pouvez demander à IR-ECO de créer des icônes pour le cours. Assurez-vous d'avoir une demande claire et précise et demandez vos ressources suffisamment à l'avance.</p>
+<p>Vous pouvez bien entendu créer vous-même les éléments visuels dont vous avez besoin. Si vous avez accès à la suite Adobe, c'est une ressource précieuse. Inkscape est un logiciel libre d'édition d'images vectorielles (.svg, .emf) disponible sur la plateforme CMF du CERN. Vous pouvez également utiliser GIMP pour l'édition de fichiers d'images matricielles (.jpg, .png) (les fichiers de projet Gimp sont des .xcf).</p>
+<p>Storyline dispose des mêmes outils que PowerPoint pour créer des formes et offre plus d'options pour les animer au passage de la souris, au clic ou à l'affichage sur la diapositive. Donnez-lui une chance et laissez-vous inspirer par les boutons de navigation disponibles dans le modèle. Vous pouvez exporter des formes vers des images si vous avez construit un objet avec plusieurs formes.</p>
+<p>Exemple :</p>
+<p><img alt="formes de voiture" src="../../img/best-practices/storyline-export-to-picture.png" /></p>
+<p>Une petite voiture créée avec les formes de Storyline 360</p>
+<p>Comme vous pouvez le voir, la voiture est un groupe d'éléments avec des sous-groupes. Il y a 11 éléments pour construire cette voiture. En la gardant ainsi sur la diapositive et en l'animant, Storyline ralentira. La solution est de faire un clic droit sur le groupe parent et de sélectionner "Enregistrer en tant qu'image". Ensuite, vous pouvez importer l'image sur la diapositive et supprimer les formes groupées (ou les sauvegarder sur une diapositive séparée). Puisqu'il s'agit d'un seul élément, vous n'aurez pas de problèmes de performance.</p>
+<p>La création d'éléments visuels à partir de Storyline vous évite d'avoir recours à des outils externes, vous savez comment l'utiliser et vous avez le droit de l'utiliser comme bon vous semble. Bien sûr, cela peut prendre plus de temps que d'utiliser un logiciel de dessin comme Illustrator ou Photoshop.</p>
+<h3 id="conception-intemporelle">Conception <em>intemporelle</em></h3>
+<p>En gardant les lignes directrices simples, ce document vous encourage à utiliser le moins possible de mises en page et de couleurs fantaisistes. Il y a deux raisons à cela :</p>
+<ol>
+<li>
+<p>Les modules d'apprentissage en ligne jouent un rôle spécifique en fonction de leur sujet et des <strong>SME</strong> qui les examinent. En vous laissant très libre sur la conception, ce document ne vous enferme pas dans une situation inconfortable, tout en vous donnant des conseils utiles pour adapter votre mise en page à une base commune avec d'autres cours.</p>
+</li>
+<li>
+<p>La conception graphique est un domaine en constante évolution. Comme la plupart des concepteurs d'e-learning ne sont pas toujours des graphistes (peut-être n'êtes-vous même pas un concepteur d'e-learning !), il peut être très difficile de changer un vieux design en un design moderne. Restez simple. Adapter chaque contenu de cours à un nouveau design à la mode peut signifier le refaire à partir de zéro. Moins on en fait, plus la durée de vie est longue.</p>
+</li>
+</ol>
+<p>Nous avons créé des modèles pour vous faire gagner du temps. Si la nouvelle génération décide qu'il est temps d'investir dans un nouveau design, pensez à nouveau à <em>intemporel</em>. Au CERN, un modèle est là pour durer de nombreuses années.</p>
+<h3 id="humour-langage-grossier">Humour (langage grossier)</h3>
+<p><a href="https://motherfuckingwebsite.com/">Un site web qui sera responsive sur n'importe quel appareil, pour toujours</a></p>
+<p><a href="https://bettermotherfuckingwebsite.com">Un site web avec un style léger qui lui permet d'être pertinent pendant de nombreuses années</a></p>
+<p><a href="https://perfectmotherfuckingwebsite.com/">Un site web parfait</a></p>
+<p>Plus sérieusement, ces sites web sont une façon de dire qu'il faut bien réfléchir avant d'alourdir son design avec de nombreux éléments qui ont une taille et une position fixes sur la page et qui ne peuvent pas être déplacés. Vous finirez par perdre beaucoup d'espace pour le contenu principal de votre cours au profit de l'apparence. Le cours ne doit pas être uniquement en noir et blanc, mais en travaillant par petites touches, il est plus facile de le maintenir pendant des années.</p>
+<h3 id="conception-responsive">Conception responsive</h3>
+<p>Le terme <em>responsive</em> signifie que votre contenu s'adapte à la taille de la fenêtre. Un site Web comme ceux présentés dans le chapitre précédent s'affichera aussi bien sur l'écran d'un ordinateur de bureau, d'un ordinateur portable ou d'un smartphone.</p>
+<p>Le lecteur Storyline est responsive. La diapositive Storyline ne l'est pas. Vous pouvez faire un zoom avant et arrière avec les gestes sur l'écran tactile de votre smartphone, et vous en aurez besoin. La taille de la diapositive est fixe et, par défaut, votre téléphone essaiera d'afficher la diapositive complète à la taille de votre écran. Les cours Storyline ne sont pas très pratiques sur les petits écrans. Il est préférable de les utiliser sur de grandes tablettes ou sur un ordinateur.</p>
+<p>Les utilisateurs du CERN ont principalement un ordinateur portable pour le travail et parfois un ordinateur de bureau. Les smartphones ne sont pas spécialement utilisés pour le travail et une minorité d'utilisateurs ont un smartphone du CERN. Par conséquent, la conception responsive n'a pas été prise en compte dans ce document pour l'instant.</p>
+<p>Si vous utilisez un outil de conception de cours en ligne basé sur un format de page web, tel que Rise ou Adapt Learning, vous produirez des modules qui seront responsive. <a href="https://www.adobe.com/fr/products/captivate.html">Adobe Captivate</a> dispose également d'une option de conteneur <em>Flex-box</em> qui adapte le texte et les diapositives à la taille de l'écran.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Retour en haut de la page
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+      
+        
+        <a href="../../page3/video/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Enregistrer une vidéo" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Enregistrer une vidéo
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../page5/other/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Autres propositions" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Autres propositions
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "toc.integrate", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>https://elearning-guidelines-hrld.docs.cern.ch/</loc>
+         <lastmod>2023-05-09</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://elearning-guidelines-hrld.docs.cern.ch/en/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://elearning-guidelines-hrld.docs.cern.ch/fr/"/>
+         
+    </url>
+    <url>
+         <loc>https://elearning-guidelines-hrld.docs.cern.ch/page2/begin/</loc>
+         <lastmod>2023-05-09</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://elearning-guidelines-hrld.docs.cern.ch/en/page2/begin/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://elearning-guidelines-hrld.docs.cern.ch/fr/page2/begin/"/>
+         
+    </url>
+    <url>
+         <loc>https://elearning-guidelines-hrld.docs.cern.ch/page3/video/</loc>
+         <lastmod>2023-05-09</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://elearning-guidelines-hrld.docs.cern.ch/en/page3/video/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://elearning-guidelines-hrld.docs.cern.ch/fr/page3/video/"/>
+         
+    </url>
+    <url>
+         <loc>https://elearning-guidelines-hrld.docs.cern.ch/page4/e-learning/</loc>
+         <lastmod>2023-05-09</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://elearning-guidelines-hrld.docs.cern.ch/en/page4/e-learning/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://elearning-guidelines-hrld.docs.cern.ch/fr/page4/e-learning/"/>
+         
+    </url>
+    <url>
+         <loc>https://elearning-guidelines-hrld.docs.cern.ch/page5/other/</loc>
+         <lastmod>2023-05-09</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="https://elearning-guidelines-hrld.docs.cern.ch/en/page5/other/"/>
+         <xhtml:link rel="alternate" hreflang="fr" href="https://elearning-guidelines-hrld.docs.cern.ch/fr/page5/other/"/>
+         
+    </url>
+</urlset>
